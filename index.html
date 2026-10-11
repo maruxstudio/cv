@@ -3,12 +3,78 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Muhammad Alaa — Product Manager, Agile Consultant, Web Developer and UX & SEO Strategist based in Cairo, Egypt.">
-<meta name="theme-color" content="#0d1725">
+<meta name="theme-color" content="#fafaf9">
 <title>Muhammad Alaa | Product Manager & Digital Product Specialist</title>
 <style>
-:root{color-scheme:dark;--bg:#0d1725;--panel:#142237;--text:#eff5fc;--muted:#a2b4c9;--accent:#59d9c6;--line:#304055}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 system-ui,-apple-system,Segoe UI,sans-serif}a{color:inherit;text-decoration:none}a:hover{color:var(--accent)}.container{max-width:1100px;margin:auto;padding:0 24px}.nav{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:76px}.logo{font-weight:800;font-size:20px;letter-spacing:-.04em}.logo span,.eyebrow{color:var(--accent)}nav{display:flex;gap:25px;flex-wrap:wrap}nav a{font-size:14px;color:var(--muted)}.hero{padding:105px 0 110px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.hero h1{font-size:clamp(42px,7vw,78px);line-height:1.08;letter-spacing:-.065em;max-width:900px;margin:18px 0}.lead{font-size:clamp(17px,2vw,22px);color:var(--muted);max-width:730px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}.btn{background:var(--accent);color:#08201c;padding:12px 22px;border-radius:9px;font-weight:750;display:inline-block;border:1px solid var(--accent);cursor:pointer;font:inherit}.btn.secondary{background:transparent;color:var(--text);border-color:var(--line)}section{padding:74px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(27px,4vw,38px);letter-spacing:-.045em;margin:0 0 22px}h3{font-size:20px;margin:8px 0}.muted,p{color:var(--muted)}.intro{max-width:800px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.card{padding:27px;background:var(--panel);border:1px solid var(--line);border-radius:14px}.card p{margin-bottom:0}.tag{display:inline-block;border:1px solid var(--line);border-radius:50px;padding:5px 12px;margin:6px 7px 0 0;color:var(--muted);font-size:13px}.project-index{color:var(--accent);font-size:13px;text-transform:uppercase;letter-spacing:.1em}.footer{padding:28px 0;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.link{color:var(--accent);font-weight:700}.note{border-left:3px solid var(--accent);padding-left:14px}button{cursor:pointer}@media(max-width:700px){.nav{align-items:flex-start;padding:22px 0;flex-direction:column}nav{gap:15px}.hero{padding:70px 0}.grid{grid-template-columns:1fr}section{padding:52px 0}}@media print{:root{color-scheme:light;--bg:#fff;--panel:#fff;--text:#111;--muted:#333;--line:#ddd;--accent:#16685b}body{font-size:11pt}.nav,.actions,.no-print{display:none!important}.hero,section{padding:22px 0;break-inside:avoid}.hero h1{font-size:35pt}.container{max-width:none}.card{break-inside:avoid;padding:15px}.footer{padding:12px 0}}
-.timeline{display:grid;gap:0}.job{display:flex;justify-content:space-between;gap:24px;padding:23px 0;border-bottom:1px solid var(--line)}.job:first-child{border-top:1px solid var(--line)}.job h3{margin:0 0 4px}.job p{margin:7px 0}.job-company{color:var(--accent)}.date{white-space:nowrap;color:var(--muted);font-size:14px;margin-top:5px}@media(max-width:700px){.job{flex-direction:column;gap:2px}.date{order:-1}}@media print{.job{padding:10px 0;break-inside:avoid}.date{white-space:normal}}</style>
+
+:root{--bg:#fafaf9;--surface:#fff;--ink:#18212b;--muted:#5d6672;--line:#e4e6e7;--accent:#155e63}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.container{width:min(100% - 48px,980px);margin-inline:auto}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-size:20px;font-weight:750;letter-spacing:-.05em;white-space:nowrap}
+.logo span,.eyebrow,.project-index,.job-company{color:var(--accent)}
+nav{display:flex;gap:19px;flex-wrap:wrap}
+nav a{font-size:13px;color:var(--muted)}
+.hero{padding:104px 0 100px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.eyebrow,.project-index{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase}
+.hero h1{max-width:800px;margin:22px 0;letter-spacing:-.055em;font-size:clamp(40px,6vw,66px);font-weight:720;line-height:1.12}
+.lead{max-width:740px;color:var(--muted);font-size:clamp(17px,2vw,20px)}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border:1px solid var(--ink);border-radius:6px;background:var(--ink);color:white;font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+.btn:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.secondary{background:transparent;color:var(--ink);border-color:#c7ced1}
+.btn.secondary:hover{border-color:var(--accent);color:var(--accent)}
+section{padding:68px 0;border-bottom:1px solid var(--line);scroll-margin-top:20px}
+h2{margin:8px 0 25px;font-size:clamp(28px,4vw,35px);line-height:1.25;letter-spacing:-.04em}
+h3{margin:0 0 8px;font-size:19px;line-height:1.4;letter-spacing:-.025em}
+p{color:var(--muted)}
+.intro{max-width:780px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{padding:25px;background:var(--surface);border:1px solid var(--line);border-radius:8px}
+.card p{margin:8px 0 0}
+.project-index{margin-bottom:12px}
+.tag{display:inline-block;padding:5px 12px;margin:0 7px 9px 0;border:1px solid #dce1e3;border-radius:5px;font-size:13px;color:var(--muted);background:var(--surface)}
+.note{padding-left:14px;border-left:2px solid var(--accent);font-size:14px}
+.timeline{display:grid}
+.job{display:flex;justify-content:space-between;gap:22px;padding:24px 0;border-bottom:1px solid var(--line)}
+.job:first-child{border-top:1px solid var(--line)}
+.job h3{margin-bottom:4px}
+.job p{margin:7px 0}
+.job-company{font-size:14px}
+.date{white-space:nowrap;color:var(--muted);font-size:13px;margin-top:4px}
+.footer{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:28px 0;color:var(--muted);font-size:13px}
+@media(max-width:760px){
+ .container{width:min(100% - 36px,980px)}
+ .nav{padding:20px 0;align-items:flex-start;flex-direction:column;gap:12px}
+ nav{gap:11px 17px}
+ .hero{padding:66px 0 70px}
+ section{padding:48px 0}
+ .grid{grid-template-columns:1fr}
+ .card{padding:22px}
+ .job{flex-direction:column;gap:2px}
+ .date{order:-1}
+}
+@media(max-width:420px){.hero h1{font-size:38px}.btn{width:100%}.actions{align-items:stretch}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{
+ :root{--bg:white;--surface:white;--ink:#111;--muted:#333;--line:#ccc;--accent:#174f53}
+ body{font-size:10.5pt;background:white}
+ .nav,.actions,.no-print{display:none!important}
+ .container{width:100%;max-width:none}
+ .hero,section{padding:18px 0;break-inside:avoid}
+ .hero h1{font-size:34pt}
+ .card,.job{break-inside:avoid}
+ .card{padding:14px}
+ .job{padding:10px 0}
+ .date{white-space:normal}
+ .footer{padding:12px 0}
+}
+</style>
 </head>
 <body>
 <header class="container nav"><a class="logo" href="#home">Muhammad<span>.</span>Alaa</a><nav aria-label="Main navigation"><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#work">Portfolio</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></nav></header>
